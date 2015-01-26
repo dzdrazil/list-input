@@ -1,0 +1,20 @@
+<script src="../bower_components/webcomponentsjs/CustomElements.js"></script>
+<script src="../bower_components/kefir/dist/kefir.js"></script>
+<script src="../bower_components/virtual-dom/dist/virtual-dom.js"></script>
+<script src="../dist/main.js"></script>
+<!-- directly embedded element -->
+<list-input name="adminEmails"></list-input>
+<hr>
+<list-input name="editorEmails"></list-input>
+
+<!-- use the values stream to update values -->
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+    'use strict';
+    var editorInputs = document.getElementsByTagName('list-input')[1];
+    editorInputs.values.emit([
+        'dzdrazil@gmail.com'
+        ]);
+});
+</script>
+

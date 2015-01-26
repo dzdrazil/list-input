@@ -1,0 +1,27 @@
+{
+  "name": "list-input",
+  "version": "0.0.1",
+  "description": "A web component to create a list of inputs",
+  "main": "dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "6to5 main.es6 --out-file dist/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dzdrazil/list-input.git"
+  },
+  "keywords": [
+    "web component"
+  ],
+  "author": "Dan Zdrazil <dzdrazil@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dzdrazil/list-input/issues"
+  },
+  "homepage": "https://github.com/dzdrazil/list-input",
+  "devDependencies": {
+    "6to5": "~2.13.5"
+  },
+  "dependencies": {}
+}
